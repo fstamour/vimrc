@@ -41,6 +41,8 @@ inoremap <C-Space> <C-x><C-o>
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-fugitive'
 Plug 'junegunn/goyo.vim'
+Plug 'posva/vim-vue'
 
 call plug#end()
