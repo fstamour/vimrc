@@ -5,6 +5,8 @@ set wrap!
 " Color
 colorscheme murphy
 syntax on
+" Highlight trailing whitespaces
+match Todo /\s\+$/
 
 " Line numbers
 set relativenumber
