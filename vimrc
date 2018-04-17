@@ -42,9 +42,15 @@ inoremap <C-Space> <C-x><C-o>
 
 call plug#begin('~/.vim/plugged')
 
+" Smart replace
 Plug 'tpope/vim-abolish'
+" Git
 Plug 'tpope/vim-fugitive'
+" Zen
 Plug 'junegunn/goyo.vim'
+
+" Web develpment
 Plug 'posva/vim-vue'
+Plug 'othree/html5.vim'
 
 call plug#end()
