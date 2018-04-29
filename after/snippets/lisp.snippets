@@ -1,0 +1,49 @@
+## Package
+snippet defpkg
+	(defpackage #:${1:package-name}
+		(:use #:cl #:alexandria))
+	
+	(in-pacakge #:$1)
+
+	${0}
+
+
+snippet defpkg
+	(defpackage #:${1:package-name}
+		(:use #:cl #:alexandria))
+	
+	(in-pacakge #:$1)
+
+	${0}
+
+snippet asdf
+	(cl:in-package #:cl-user)
+
+	(defpackage #:${1:system-name}-asd
+		(:use #:cl #:asdf))
+
+	(in-package #:$1-asd)
+
+	(defsystem #:$1
+		:version "1.0.0"
+		:description ""
+		:license "BSD-2-Clause"
+		:serial t
+		:depends-on (#:alexandria)
+		:components
+			((:module src
+				:serial t
+				:components
+						((:file "packages")
+						 (:file "$1")))))
+	
+	(defsystem #:$1-test
+		:description "Self test functionality for the $1 system."
+		:components
+		((:module "test"
+			:serial t
+			:components
+			((:file "packages")
+			 (:file "tests"))))
+		:depends-on (#:$1))
+	
