@@ -53,4 +53,10 @@ Plug 'junegunn/goyo.vim'
 Plug 'posva/vim-vue'
 Plug 'othree/html5.vim'
 
+" Snippets
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+
 call plug#end()
