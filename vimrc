@@ -48,15 +48,15 @@ Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-fugitive'
 " Zen
 Plug 'junegunn/goyo.vim'
-
 " Web develpment
 Plug 'posva/vim-vue'
 Plug 'othree/html5.vim'
-
 " Snippets
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
+" Lisp
+Plug 'kovisoft/slimv'
 
 call plug#end()
