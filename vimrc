@@ -57,6 +57,8 @@ Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 " Lisp
-Plug 'kovisoft/slimv'
+if has('python')
+  Plug 'kovisoft/slimv'
+endif
 
 call plug#end()
