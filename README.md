@@ -18,6 +18,7 @@ curl -fLo ~/vimfiles/autoload/plug.vim --create-dirs \
 ```
 
 Open vim and run `:PlugInstall`.
+Source the vimrc again, the colorscheme should change.
 
 ## Notes for nvim
 

@@ -2,8 +2,6 @@ set clipboard=unnamed
 set smartcase
 set wrap!
 
-" Color
-colorscheme murphy
 syntax on
 " Highlight trailing whitespaces
 match Todo /\s\+$/
@@ -60,5 +58,11 @@ Plug 'honza/vim-snippets'
 if has('python')
   Plug 'kovisoft/slimv'
 endif
+" colorscheme
+Plug 'dracula/vim'
 
 call plug#end()
+
+" Color
+silent! colorscheme dracula
+
