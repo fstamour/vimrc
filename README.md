@@ -1,15 +1,18 @@
 # My vim configurations
 
-## Install vim-plug
+## Install
 
 Non-windows
 ```sh
+git clone git@github.com:fstamour/vimrc.git ~/.vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 Windows
-```sh
+```cmd
+git clone git@github.com:fstamour/vimrc.git ~/vimfiles
+mklink /d .vim vimfiles
 curl -fLo ~/vimfiles/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
@@ -18,7 +21,9 @@ Open vim and run `:PlugInstall`.
 
 ## Notes for nvim
 
-Can load vim's config with this.
+Can load vim's config with this:
+The vimrc is located in `%appdata%/../Local/nvim/init.vim` on windows and 
+probably in `~/.config/nvim` on other systems.
 
 ```
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
@@ -26,16 +31,11 @@ let &packpath = &runtimepath
 source ~/.vimrc
 ```
 
-## Notes on windows
+## Windows
 
-Clone this repo in `~`. Then in _windows_ command line (i.e. not git-bash) enter `mklink .vimrc vimrc\vimrc`.
+### Python support
 
-Can use the file `~/.vimrc`.
-`.vim` folder is named `vimfiles` instead, but some plugin still put stuff in `.vim`.
-
-### Nvim
-
-The vimrc is located in `%appdata%/../Local/nvim/init.vim`
+Go to https://www.python.org/downloads/ and install v3.6+
 
 ### VsVim
 
