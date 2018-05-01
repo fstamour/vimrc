@@ -1,7 +1,10 @@
+let mapleader = "<Space>"
+
 set clipboard=unnamed
 set smartcase
 set wrap!
 
+" Color
 syntax on
 " Highlight trailing whitespaces
 match Todo /\s\+$/
@@ -9,12 +12,6 @@ match Todo /\s\+$/
 " Line numbers
 set relativenumber
 set number " without it, the relativenumber show "0" on the current line
-
-" Easy movements between windows (a la emacs' windmove)
-map <C-k> <C-w>k
-map <C-j> <C-w>j
-map <C-h> <C-w>h
-map <C-l> <C-w>l
 
 " Indentation
 set expandtab
