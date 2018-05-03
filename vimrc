@@ -61,7 +61,7 @@ Plug 'dracula/vim'
 " Fuzzzzz
 Plug 'ctrlpvim/ctrlp.vim'
 " Start screen
-Plug 'mhinz/vim-startify'
+" Plug 'mhinz/vim-startify' " For some reason, this interfere with slimv
 
 call plug#end()
 
