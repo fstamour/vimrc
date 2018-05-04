@@ -48,12 +48,14 @@ Plug 'junegunn/goyo.vim'
 Plug 'posva/vim-vue'
 Plug 'othree/html5.vim'
 " Snippets
+let g:snips_trigger_key = "<C-TAB>" " to not interfere with slimv
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 " Lisp
-if has('python')
+if has('python3')
+  let g:lisp_rainbow=1
   Plug 'kovisoft/slimv'
 endif
 " colorscheme
