@@ -1,5 +1,19 @@
 let mapleader = "\<Space>"
 
+" https://www.reddit.com/r/vim/comments/38d9ts/ideas_for_using_the_leader_key_feature/
+"
+" Word bubbling
+nnoremap <silent> <Plug>BubbleWordLeft "_yiw?\v\w+\_W+%#<CR>:s/\v(%#\w+)(\_W+)(\w+)/\3\2\1/<CR><C-o><C-l>
+      \:call repeat#set("\<Plug>BubbleWordLeft")<CR>
+nnoremap <silent> <Plug>BubbleWordRight "_yiw:s/\v(%#\w+)(\_W+)(\w+)/\3\2\1/<CR><C-o>/\v\w+\_W+<CR><C-l>
+      \:call repeat#set("\<Plug>BubbleWordRight")<CR>
+nmap <Leader>h <Plug>BubbleWordLeft
+nmap <Leader>l <Plug>BubbleWordRight
+
+" Paste Over
+xnoremap <silent> <Plug>PasteOverSelection "_dP
+xmap <Leader>p <Plug>PasteOverSelection
+
 set clipboard=unnamed
 set smartcase
 set wrap!
@@ -38,6 +52,8 @@ inoremap <C-Space> <C-x><C-o>
 
 call plug#begin('~/.vim/plugged')
 
+" Repeat all the thing!
+Plug 'tpope/vim-repeat'
 " Smart replace
 Plug 'tpope/vim-abolish'
 " Git
