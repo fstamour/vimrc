@@ -64,6 +64,8 @@ Plug 'dracula/vim'
 Plug 'ctrlpvim/ctrlp.vim'
 " Start screen
 Plug 'mhinz/vim-startify'
+" Status Line
+Plug 'bling/vim-airline'
 
 call plug#end()
 
