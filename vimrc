@@ -48,7 +48,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'posva/vim-vue'
 Plug 'othree/html5.vim'
 " Snippets
-let g:snips_trigger_key = "<C-TAB>" " to not interfere with slimv
+imap <C-j> <Plug>snipMateNextOrTrigger
+smap <C-j> <Plug>snipMateNextOrTrigger
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
